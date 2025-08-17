@@ -5,7 +5,7 @@ Aqui você encontrará alguns projetos que desenvolvi e as tecnologias que utili
 
 ---
 
-## 🚀 Tecnologias
+## 🚀 Tecnologias utilizadas
 - Next.js  
 - TypeScript  
 - TailwindCSS
