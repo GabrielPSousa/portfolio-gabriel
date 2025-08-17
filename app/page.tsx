@@ -23,24 +23,24 @@ export default function Page() {
                   href="#about"
                   className="transition-colors hover:text-foreground/80"
                 >
-                  About
+                  Sobre
                 </Link>
                 <Link
                   href="#projects"
                   className="transition-colors hover:text-foreground/80"
                 >
-                  Projects
+                  Projetos
                 </Link>
                 <Link
                   href="#contact"
                   className="transition-colors hover:text-foreground/80"
                 >
-                  Contact
+                  Contato
                 </Link>
               </nav>
             </div>
             <Button variant="outline" className="ml-auto">
-              Resume
+              Resumo
             </Button>
           </div>
         </header>
@@ -49,7 +49,7 @@ export default function Page() {
           <section id="about" className="py-12 md:py-24 lg:py-32">
             <div className="container px-4 md:px-6">
               <div className="flex flex-col items-center justify-center space-y-4 text-center">
-                <div className="space-y-2">
+                <div className="space-y-4">
                   <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none">
                     Software Developer - Gabriel Sousa
                   </h1>
@@ -61,13 +61,16 @@ export default function Page() {
                   </p>
                 </div>
                 <div className="space-x-4">
-                  <Link href="https://github.com" target="_blank">
+                  <Link href="https://github.com/GabrielPSousa" target="_blank">
                     <Button variant="outline" size="icon">
                       <Github className="h-4 w-4" />
                       <span className="sr-only">GitHub</span>
                     </Button>
                   </Link>
-                  <Link href="https://linkedin.com" target="_blank">
+                  <Link
+                    href="https://www.linkedin.com/in/gabriel-sousa-3251759a/"
+                    target="_blank"
+                  >
                     <Button variant="outline" size="icon">
                       <Linkedin className="h-4 w-4" />
                       <span className="sr-only">LinkedIn</span>
@@ -79,7 +82,7 @@ export default function Page() {
                       <span className="sr-only">Twitter</span>
                     </Button>
                   </Link>
-                  <Link href="mailto:hello@example.com">
+                  <Link href="mailto:gabriel_pereirasousa@outlook.com">
                     <Button variant="outline" size="icon">
                       <Mail className="h-4 w-4" />
                       <span className="sr-only">Email</span>
@@ -93,29 +96,29 @@ export default function Page() {
           <section id="projects" className="py-12 md:py-24 lg:py-32">
             <div className="container px-4 md:px-6">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-12 text-center">
-                Projects
+                Projetos
               </h2>
               <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
                 <ProjectCard
-                  title="E-commerce Platform"
-                  description="A full-stack e-commerce platform built with Next.js, Prisma, and Stripe integration."
-                  image="/placeholder.svg?height=400&width=600"
+                  title="Barber App"
+                  description="Aplicativo focado para barbearias contruido com Next.js, Nest, e PostgreSQL integration."
+                  image="/barber-app.jpg"
                   link="https://github.com"
-                  tags={["Next.js", "Prisma", "Stripe"]}
+                  tags={["Next", "Nest", "PostgreSQL"]}
                 />
                 <ProjectCard
                   title="Task Management App"
-                  description="A real-time task management application with team collaboration features."
-                  image="/placeholder.svg?height=400&width=600"
+                  description="Web App para gerenciamento de tarefas, com funcionalidades de colaboração em tempo real."
+                  image="/task-manager-app.jpg"
                   link="https://github.com"
                   tags={["React", "Node.js", "Socket.io"]}
                 />
                 <ProjectCard
-                  title="AI Chat Interface"
-                  description="An AI-powered chat interface with natural language processing capabilities."
-                  image="/placeholder.svg?height=400&width=600"
+                  title="Real-time Chat App"
+                  description="Aplicativo de chat em tempo real, com suporte a múltiplos usuários e salas de conversa."
+                  image="/chat-app.jpg"
                   link="https://github.com"
-                  tags={["OpenAI", "Next.js", "TailwindCSS"]}
+                  tags={["Firebase", "Next.js", "TailwindCSS"]}
                 />
               </div>
             </div>
@@ -134,7 +137,7 @@ export default function Page() {
             <div className="container px-4 md:px-6">
               <div className="mx-auto max-w-2xl">
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-12 text-center">
-                  Get in Touch
+                  Entre em Contato
                 </h2>
                 <ContactForm />
               </div>
@@ -145,7 +148,7 @@ export default function Page() {
         <footer className="border-t">
           <div className="container flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6">
             <p className="text-xs text-gray-500 dark:text-gray-400">
-              © 2024 John.dev. All rights reserved.
+              © All rights reserved.
             </p>
             <nav className="sm:ml-auto flex gap-4 sm:gap-6">
               <Link
